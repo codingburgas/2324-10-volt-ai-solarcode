@@ -1,34 +1,34 @@
-class InitialApplication:
-    def __init__(self):
-        self.running = True
+import tkinter as tk
 
-    def start(self):
-        print("Welcome to the SolarCode Application!")
-        print("Choose option:")
-        print("1 - help")
-        print("2 - exit")
+class App:
+    def __init__(self, ui_frame, data_object, modeling_object):
+        self.ui_frame = ui_frame
+        self.data_object = data_object
+        self.modeling_object = modeling_object
 
-        while self.running:
-            command = input(">> ")
-            self.handle_command(command)
+    def run(self):
+        self.setup_ui()
+        self.load_data()
+        self.ui_frame.mainloop()
 
-    def handle_command(self, command):
-        if command == "help":
-            self.print_help()
-        elif command == "exit":
-            self.exit_application()
-        else:
-            print("Unknown command. Type 'help' or 'exit'.")
+    def setup_ui(self):
+        label = tk.Label(self.ui_frame, text="Welcome to the App")
+        label.pack()
 
-    def print_help(self):
-        print("Available commands:")
-        print("help - Show available commands")
-        print("exit - Exit the application")
 
-    def exit_application(self):
-        print("Exiting the application. Goodbye!")
-        self.running = False
+    def load_data(self):
+        data = self.data_object.load_data()
+
+    def perform_modeling(self):
+
+        self.modeling_object.train_model()
 
 if __name__ == "__main__":
-    app = InitialApplication()
-    app.start()
+    root = tk.Tk()
+    root.title("My App")
+
+    data_obj = DataObject()
+    modeling_obj = ModelingObject()
+
+    app = App(root, data_obj, modeling_obj)
+    app.run()
