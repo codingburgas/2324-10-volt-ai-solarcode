@@ -2,11 +2,31 @@
 The main module of the application. Connects the builder, the UI, and the data.
 """
 
-#I am not so sure if i made the dummy write
 
-from faker import Faker
-import pandas as pd
-fake = Faker()
-data = [fake.profile() for i in range(50)]
-data = pd.DataFrame(data)
-print(data.head())
+import csv
+
+class CSVReader:
+    def read_csv(self, file_path):
+        try:
+            with open(file_path, newline='') as csvfile:
+                csv_reader = csv.reader(csvfile)
+                data = []
+                for row in csv_reader:
+                    data.append(row)
+                return data
+        except FileNotFoundError:
+            print(f"File '{file_path}' not found.")
+            return None
+        except Exception as e:
+            print(f"Error occurred while reading file '{file_path}': {e}")
+            return None
+
+# Пример!?!
+if __name__ == "__main__":
+    csv_reader = CSVReader()
+    file_path = "example.csv"
+    data = csv_reader.read_csv(file_path)
+    if data:
+        print("CSV Data:")
+        for row in data:
+            print(row)
