@@ -6,8 +6,6 @@ from tkinter import Tk, Label, Button, StringVar
 from sklearn.cluster import KMeans, DBSCAN, AgglomerativeClustering
 import csv
 
-import csv
-
 class CSVReader:
     def read_csv(self, file_path):
         try:
