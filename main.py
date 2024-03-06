@@ -6,6 +6,10 @@ from tkinter import Tk, Label, Button, StringVar
 from sklearn.cluster import KMeans, DBSCAN, AgglomerativeClustering
 import csv
 
+import csv
+import tkinter as tk
+from PIL import Image, ImageTk
+
 class CSVReader:
     def read_csv(self, file_path):
         try:
@@ -89,3 +93,32 @@ class ClusteringModule:
 
         # Fit the model to the data and return the cluster labels
         return model.fit_predict(data)
+
+
+
+
+
+class ImageFrame(tk.Frame):
+    def __init__(self, parent, image_path, *args, **kwargs):
+        tk.Frame.__init__(self, parent, *args, **kwargs)
+        
+        self.image = Image.open(image_path)
+        self.photo = ImageTk.PhotoImage(self.image)
+        
+        self.label = tk.Label(self, image=self.photo)
+        self.label.pack()
+
+
+def main():
+    root = tk.Tk()
+    root.title("Image Display Frame")
+    
+    image_path = "./images/kotka.jfif"  
+    
+    image_frame = ImageFrame(root, image_path)
+    image_frame.pack()
+    
+    root.mainloop()
+
+if __name__ == "__main__":
+    main()
