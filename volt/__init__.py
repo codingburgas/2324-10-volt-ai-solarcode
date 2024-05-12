@@ -1,34 +1,32 @@
 import tkinter as tk
+from model import *
+from data_prep import *
+from ui import *
+from image_frame import *
 
-class App:
-    def __init__(self, ui_frame, data_object, modeling_object):
-        self.ui_frame = ui_frame
-        self.data_object = data_object
-        self.modeling_object = modeling_object
+class DataModelAppController:
+    def __init__(self, file_path, png_path):
+        self.file_path = file_path
+        self.png_path = png_path
 
     def run(self):
-        self.setup_ui()
-        self.load_data()
-        self.ui_frame.mainloop()
+        reader = CSVReader(self.file_path)
+        data = reader.read()
 
-    def setup_ui(self):
-        label = tk.Label(self.ui_frame, text="Welcome to the App")
-        label.pack()
+        algorithm = "kmeans"
+        parameters = {"n_clusters": 2}
 
+        cluster_data_an = cluster_data(data, algorithm, parameters)
+        print(cluster_data_an)
 
-    def load_data(self):
-        data = self.data_object.load_data()
-
-    def perform_modeling(self):
-
-        self.modeling_object.train_model()
+        root = tk.Tk()
+        app = DataModelApp(root)
+        image_frame = ImageFrame(root,self.png_path)
+        image_frame.pack()
+        root.mainloop()
 
 if __name__ == "__main__":
-    root = tk.Tk()
-    root.title("My App")
-
-    data_obj = DataObject()
-    modeling_obj = ModelingObject()
-
-    app = App(root, data_obj, modeling_obj)
-    app.run()
+    file_path = "volt/assets/california_housing_test.csv"
+    png_path = "volt/assets/example.png"
+    app_controller = DataModelAppController(file_path, png_path)
+    app_controller.run()
