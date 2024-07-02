@@ -13,11 +13,11 @@ openmeteo = openmeteo_requests.Client(session = retry_session)
 # The order of variables in hourly or daily is important to assign them correctly below
 url = "https://archive-api.open-meteo.com/v1/archive"
 params = {
-	"latitude": 41.390205,
-	"longitude": 	2.154007,
-	"start_date": "2024-03-01",
-	"end_date": "2024-03-31",
-	"hourly": "cloud_cover"
+	"latitude": input(),
+	"longitude": input(),
+	"start_date": input(),
+	"end_date": input(),
+	"hourly": ["temperature_2m", "rain", "cloud_cover"]
 }
 responses = openmeteo.weather_api(url, params=params)
 
@@ -30,7 +30,9 @@ print(f"Timezone difference to GMT+0 {response.UtcOffsetSeconds()} s")
 
 # Process hourly data. The order of variables needs to be the same as requested.
 hourly = response.Hourly()
-hourly_cloud_cover = hourly.Variables(0).ValuesAsNumpy()
+hourly_temperature_2m = hourly.Variables(0).ValuesAsNumpy()
+hourly_rain = hourly.Variables(1).ValuesAsNumpy()
+hourly_cloud_cover = hourly.Variables(2).ValuesAsNumpy()
 
 hourly_data = {"date": pd.date_range(
 	start = pd.to_datetime(hourly.Time(), unit = "s", utc = True),
@@ -38,6 +40,8 @@ hourly_data = {"date": pd.date_range(
 	freq = pd.Timedelta(seconds = hourly.Interval()),
 	inclusive = "left"
 )}
+hourly_data["temperature_2m"] = hourly_temperature_2m
+hourly_data["rain"] = hourly_rain
 hourly_data["cloud_cover"] = hourly_cloud_cover
 
 hourly_dataframe = pd.DataFrame(data = hourly_data)
