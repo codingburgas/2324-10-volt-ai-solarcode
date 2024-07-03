@@ -36,15 +36,12 @@ function HomePage() {
     <div style={containerStyle}>
       <NavBar handleClick={handleClick_section1} handleClick1={handleClick_section2} handleClick2={handleClick_section3}/>
 
-      <div>
         <div className='content-banner'>
           <div className='content-banner1'>
             <h1>Complete Solution for Your Solar Panel Needs!</h1>
             <Link to="/main"><button type="button">Try Now</button></Link>
           </div>
         </div>
-      </div>
-
       <section className="section"> 
         <div className="section-content">
           <div className="steps">

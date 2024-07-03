@@ -1,13 +1,17 @@
 
-
 * {
-  font-family: 'Inter', sans-serif;
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
 }
 
 
+
+/* height of the container */
+.leaflet-container {
+  height: 90vh;
+  width: 100em;
+  border-radius: 2rem;
+}
 
 
 
@@ -113,14 +117,14 @@
   background-color: white;
   overflow: hidden;
   width: 100%;
-  height:300px;
+  height:200px;
 }
 .section-content {
   display: flex;
   align-items: center;
   overflow: hidden;
   width: 100%;
-  height:300px;
+  height:200px;
   justify-content: space-around;
 }
 .steps-content {
@@ -202,8 +206,6 @@ hr {
   width: 100%;
   padding-bottom: 5rem;
 }
-
-
 /* Login & Register */
 
 .auth-form {
@@ -597,14 +599,13 @@ hr {
 .main-page {
   flex-direction: row ;
   display: flex;
-  background-color: #20275A;
+  background-color: #FFF;
   width: 100vw;
   height: 100vh;
   align-items: center;
+
 }
 .side-menu {
-  display: flex;
-  flex-direction: column;
   justify-content: center;
   margin: 5rem;
   border: solid 0.2rem white;  
@@ -615,6 +616,21 @@ hr {
   height: 75vh;
   background-color: white;
 }
+.side-menu2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+  margin: 5rem;
+  border: solid 0.2rem white;  
+  border-radius: 15px;
+  box-shadow: 0px 0px 2rem lightblue;
+
+  width: 25vw;
+  height: 75vh;
+  background-color: white;
+}
+
 .side-menu h2{
   margin: 5rem;
   text-decoration: none;

@@ -1,9 +1,9 @@
-import "../components/MapComponentStyle.css";
 import "leaflet/dist/leaflet.css";
-
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
-import MarkerClusterGroup from "react-leaflet-cluster";
 
+
+
+// markers
 const markers = [
   {
     geocode: [48.86, 2.3522],
@@ -19,20 +19,15 @@ const markers = [
   }
 ];
 
-export default function MapComponent() {
+export default function App() {
   return (
-    <MapContainer center={[48.8566, 2.3522]} zoom={13} className="leaflet-container">
+    <MapContainer center={[48.8566, 2.3522]} zoom={13}>
+      {/* OPEN STREEN MAPS TILES */}
       <TileLayer
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
-      <MarkerClusterGroup>
-        {markers.map((marker, index) => (
-          <Marker key={index} position={marker.geocode}>
-            <Popup>{marker.popUp}</Popup>
-          </Marker>
-        ))}
-      </MarkerClusterGroup>
+    
     </MapContainer>
   );
 }
