@@ -1,0 +1,5 @@
+# needed for open-meteo data
+openmeteo_requests==1.2.0
+requests-cache==1.2.1
+pandas==2.2.2
+retry-requests==2.0.0
