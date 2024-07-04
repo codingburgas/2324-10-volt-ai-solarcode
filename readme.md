@@ -25,14 +25,14 @@ SolarCode is your comprehensive resource for all things related to solar energy.
 ✅ Interactive Maps<br>
  
 ## Our Team
-- <a href="https://github.com/ATSivkov21"> Alexander Sivkov (Data analising) </a><br>
+- <a href="https://github.com/ATSivkov21"> Alexander Sivkov (Data Analyst) </a><br>
 - <a href="https://github.com/ATApostolov21"> Atanas Apostolov (Scrum Trainer)</a> <br>
 - <a href="https://github.com/BSBadalova21"> Bilyana Badalova (Scrum Trainer) </a><br>
-- <a href="https://github.com/VBPendashev21"> Valentin Pendashev (Scrum Trainer)</a> <br>
-- <a href="https://github.com/GEKalashnik21"> Grigoriy Kalashnik (Backend Developer) </a><br>
-- <a href="https://github.com/DKByandov21"> Dimitar Byandov (Scrum Trainer)</a> <br>
+- <a href="https://github.com/VBPendashev21"> Valentin Pendashev (Data Analyst)</a> <br>
+- <a href="https://github.com/GEKalashnik21"> Grigoriy Kalashnik (Data Analyst) </a><br>
+- <a href="https://github.com/DKByandov21"> Dimitar Byandov (Frontend Developer)</a> <br>
 - <a href="https://github.com/DDPeev21"> Dobril Peev (Backend Developer) </a><br>
-- <a href="https://github.com/LPApostolov21"> Lazar Apostolov (Scrum Trainer)</a> <br>
+- <a href="https://github.com/LPApostolov21"> Lazar Apostolov (Frontend Developer)</a> <br>
 ## See our documents here
  [Presentaion](https://github.com/codingburgas/2324-10-volt-ai-solarcode/volt/docs/Presentation.pptx)  
  
