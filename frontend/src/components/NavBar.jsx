@@ -1,5 +1,5 @@
 import {Link} from "react-router-dom"
-import Logo from "../assets/logo.png"
+import Logo from "../assets/logo.jpg"
 import React, { useState, useEffect } from 'react';
 
 
@@ -29,13 +29,11 @@ function NavBar({ handleClick ,handleClick1, handleClick2 }){
 
           <Link to= "/"><img src={Logo} /></Link>
         </div>
-          <h1 id="logo">SolarCoders</h1>
         <ul className="nav-links">
           <li onClick = {handleClick}><Link to="/">FEATURES</Link></li>
           <li onClick = {handleClick1}><Link to="/">ABOUT</Link></li>
           <li onClick = {handleClick2}><Link to="/">MEMBERS</Link></li>
-          <li><Link to="/login">LOGIN</Link></li>
-          <li><Link to="/register">REGISTER</Link></li>
+          <li><button type="button" ><Link to="/main">Try Now</Link></button></li>
         </ul>
       </nav>
     </div>

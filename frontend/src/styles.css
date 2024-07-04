@@ -55,7 +55,11 @@
 }
 
 .nav-links li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   margin-right: 80px;
+  justify-content: center;
   font-size: 1rem;
 
 }
@@ -67,15 +71,18 @@
   transition: all 0.5s;
 }
 
-.nav-links a:hover {
-  font-size: 1.1rem;
+.nav-links li:hover {
+  font-size: 1.2rem;
   color: #ddd;
 }
 /* Content */
 .content-banner {
+  display: flex;
+  flex-direction: column;
   margin-top:95px;
   width: auto;
   overflow: hidden;
+  justify-content: center;
   background-position: center;
   background-size: 100%;
   height: 90vh;
@@ -83,16 +90,17 @@
   background-image: url("assets/banner.png");
 }
 .content-banner1 {
-  display: flex;
   width: 1280px;
-  height:90vh;
-  margin: 0px auto;
-  align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
 }
+.content-banner1 {
+  margin: 0px auto;
+}
 .content-banner1 h1 {
+  margin-top: 20vh;
   font-size: 5rem;
   opacity: 90%;
   color: white;
@@ -117,6 +125,30 @@
   cursor: pointer;
   transition: all 1s;
   margin-top: 50px;
+}
+.nav-links button {
+  background-color: #99ADDB;
+  border: none;
+  border-radius: 5rem;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size:20px;
+  padding: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.1s;
+}
+.nav-links button:hover {
+
+  font-size:22px;
+
+}
+.nav-links button a {
+
+  color: white;
+ 
 }
 .content-banner1 button:hover {
   background-color: blue;
@@ -152,7 +184,7 @@
 }
 
 .section__title {
-  padding-top: 3rem;
+  padding-top: 25vh;
 }
 .section-content1 {
   padding-top: 5rem;
@@ -184,8 +216,43 @@ h1 {
   padding-top: 15px;
   padding-bottom: 15px;
   font-size: 1.2rem;
+  text-decoration: none;
 }
 
+
+.section-content2 ul {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+.section-content2 {
+  width: 1280px;
+  margin: 0px auto;
+  text-decoration: none;
+
+}
+#specialEffect {
+  background: radial-gradient(circle,dodgerblue,yellow);
+  background-clip: text;
+  color: transparent;
+  animation: gemini 15s linear infinite;
+  background-size: 200% 200%;
+}
+@keyframes gemini {
+  
+  0%{
+      background-position: 0% 0%;
+  }
+  
+  50%{
+      background-position: 100% 100%;
+  }
+  
+  100%{
+      background-position: 0% 0%;
+  }
+}
 .section-3 {
   background-color: #e9e9e9;
   width: 100%;
@@ -442,7 +509,9 @@ hr {
     --bg: var(--c2);
   }
 }
-
+@keyframes mymove {
+  50% {opacity: 20%;}
+}
 @keyframes position {
   0% {
     background-position: 
@@ -625,9 +694,9 @@ hr {
   border: solid 0.2rem white;  
   border-radius: 15px;
   box-shadow: 0px 0px 2rem lightblue;
-flex-grow: 2;
 height: 10vh;
 padding: 40px;
+  flex-grow: 3;
   background-color: white;
 }
 .side-menu button {
@@ -635,6 +704,7 @@ padding: 40px;
   width: 25%;
   height: 2rem;
   color: white;
+  margin: 10px;
   font-size: 16px;
   border: 1px solid black;
   border-radius: 15px;
@@ -645,13 +715,23 @@ padding: 40px;
 .side-menu input {
   border: 2px solid rgba(0, 0, 0, 0.5);
   border-radius: 15px;
-  display: flex;
-  flex-direction: column;
   padding: 10px;
   margin-top: 5px;
   transition: all 0.5s;
 }
+.arrow-down {
+  color: #fff;
+  margin-top: 200px;
+  animation: mymove 2s infinite;
+  transition: all 0.5s;
 
+}
+.arrow-down:hover {
+  color: #fff;
+  margin-top: 200px;
+  animation: none;
+
+}
 .side-menu1 {
   display: flex;
   flex-direction: column;

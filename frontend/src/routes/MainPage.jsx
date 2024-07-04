@@ -3,6 +3,7 @@ import Footer from '../components/Footer';
 import MapComponent from '../components/MapComponent';
 import { Link, useNavigate } from "react-router-dom";
 
+
 function MainPage() {
   const [searchQuery, setSearchQuery] = useState('');
   const [searchLocation, setSearchLocation] = useState(null);

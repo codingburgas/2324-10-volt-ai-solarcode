@@ -5,6 +5,7 @@ import { Link, Navigate } from "react-router-dom"
 import 'react-lazy-load-image-component/src/effects/blur.css'; // Import the desired effect
 import iPhonePhoto from "../assets/iPhone-13-Pro-Front.png"
 import MacPhoto from "../assets/Mac Studio.png"
+import { IoIosArrowDown } from "react-icons/io";
 
 
 
@@ -34,6 +35,7 @@ function HomePage() {
   const containerStyle = {
     textAlign: 'center',
     fontFamily: 'Arial, sans-serif',
+    overflow: 'hidden'
   };
   
   return (
@@ -42,10 +44,19 @@ function HomePage() {
 
       <div>
         <div className='content-banner'>
-          <div className='content-banner1'>
-            <h1>Complete Solution for Your Solar Panel Needs!</h1>
-            <h3>Complete Solution for Your Solar Panel Needs!Complete Solution for Your Solar Panel Needs!Complete Solution for Your Solar Panel Needs!Complete Solution for Your Solar Panel Needs!Complete Solution for Your Solar Panel Needs!</h3>
-            <Link to="/main"><button type="button">Try Now</button></Link>
+          <div className='content-banner2'>
+
+            <div className='content-banner1'>
+              <h1>Complete Solution for Your Solar Panel Needs!</h1>
+              <h3>Complete Solution for Your Solar Panel Needs!Complete Solution for Your Solar Panel Needs!Complete Solution for Your Solar Panel Needs!Complete Solution for Your Solar Panel Needs!Complete Solution for Your Solar Panel Needs!</h3>
+            </div>
+
+            <div className='content-banner1'>
+                <Link to="/main"><button type="button">Try Now</button></Link>
+            </div>
+
+            <div className='content-banner1'>
+              <Link to="/"><IoIosArrowDown  className='arrow-down' size={90}  onClick={handleClick_section1}/></Link>
             </div>
         </div>
       </div>
@@ -57,22 +68,19 @@ function HomePage() {
       <section className="section-2" ref={section1Ref} id="section-2">
         <div className="section__title">
           <h4>Features</h4>
-          <h1>What does SolarCoders offer?</h1>
+          <h1>What does <span id='specialEffect'>SolarCoders</span> offer?</h1>
           <br></br>
           <hr></hr>
         </div>              
         <div className="section-content2">
           <br></br>
           <ul>
-            <li id="special"><b>Peer Tutoring:</b> Connect with classmates for academic help in specific subjects.</li>            <li><b>Study Groups:</b> Form virtual study groups to collaborate on projects and share resources. </li>
-            <li><b>Q&A Forum:</b> Ask and answer questions in an interactive forum. </li>
+            <li id="special"><b>Interactive Mapping Interface:</b> Our user-friendly interactive map allows you to effortlessly navigate and explore potential solar panel installation sites. Zoom in and out, pan across different areas, and click on specific locations to get detailed information about their solar potential.</li>           
+            <li><b>Solar Potential Analysis</b> Harness the power of advanced algorithms and satellite data to evaluate the solar potential of any location. Our tool provides detailed insights into sunlight exposure, average solar radiation, and seasonal variations to help you make informed decisions. </li>
+            <li><b>Customizable Layers</b> Tailor your map view with customizable layers that include terrain, building footprints, vegetation cover, and more. Visualize how different factors impact the suitability of a location for solar panel installation. </li>
             <li><b>Resource Hub:</b> Access and share study materials and notes. </li>
-            <li><b>Mentorship:</b> Connect with experienced students for guidance on academics and career choices. </li>
+            <li><b>Weather Data Integration </b> Access real-time and historical weather data to understand how local climate conditions affect solar energy production. Our tool integrates information on cloud cover, temperature, and precipitation to give you a comprehensive overview. </li>
           </ul>
-
-        
-        
-
         </div>
 
 
@@ -88,7 +96,12 @@ function HomePage() {
         </div>
         <div className='section__3content'>
           <p>
-          Welcome to SHS – Students Help Students, where collaboration fuels success. Our diverse team is united by a common goal: empowering fellow students in their academic journeys. Through open communication and a commitment to excellence, SHS provides a supportive platform where knowledge meets community. Join us in a space where students help students thrive.
+          Welcome to Solar Coders, your premier destination for discovering optimal locations for solar panel installations. Our mission is to empower individuals, businesses, and communities to harness the power of solar energy, contributing to a sustainable and energy-efficient future. Here’s what makes us the trusted leader in solar mapping solutions:
+          </p>
+          <br></br>
+          <h2>Our Mission</h2>
+          <p>
+          Welcome to our Solar Panel Mapping Tool, your premier destination for discovering optimal locations for solar panel installations. Our mission is to empower individuals, businesses, and communities to harness the power of solar energy, contributing to a sustainable and energy-efficient future. Here’s what makes us the trusted leader in solar mapping solutions:
           </p>
         </div>
       </section>
@@ -107,7 +120,8 @@ function HomePage() {
       
       <Footer />  
     </div>
-  );
+    </div>
+  )
 }
 
 export default HomePage;
