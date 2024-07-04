@@ -9,6 +9,8 @@ import pandas as pd
 from retry_requests import retry
 import time
 
+
+print("")
 # read city location data
 power_consumption_data = pd.read_csv('C:\Users\DDPeev21\2324-10-volt-ai-solarcode\volt\docs\power_consumption_data.csv')
 cities_with_coordinates = power_consumption_data[['City', 'Coordinates']]

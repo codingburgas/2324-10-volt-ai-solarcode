@@ -2,7 +2,7 @@
 
 import pandas as pd
 
-hourly_data = pd.read_csv("data/cities_data_hourly.csv")
+hourly_data = pd.read_csv("models/data/cities_data_hourly.csv")
 
 # Assuming hourly_data contains data for multiple locations
 locations = hourly_data['city'].unique()
@@ -40,4 +40,4 @@ final_yearly_data = pd.concat(all_yearly_data, ignore_index=True)
 
 print(final_yearly_data)
 
-final_yearly_data.to_csv("data/cities_data_yearly.csv", index = False)
+final_yearly_data.to_csv("models/data/cities_data_yearly.csv", index = False)
