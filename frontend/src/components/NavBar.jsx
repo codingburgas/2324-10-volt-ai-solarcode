@@ -29,7 +29,7 @@ function NavBar({ handleClick ,handleClick1, handleClick2 }){
 
           <Link to= "/"><img src={Logo} /></Link>
         </div>
-          <h1 id="logo">...</h1>
+          <h1 id="logo">SolarCoders</h1>
         <ul className="nav-links">
           <li onClick = {handleClick}><Link to="/">FEATURES</Link></li>
           <li onClick = {handleClick1}><Link to="/">ABOUT</Link></li>
