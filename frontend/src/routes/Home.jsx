@@ -3,6 +3,10 @@ import NavBar from '../components/NavBar';
 import Footer from '../components/Footer'
 import { Link, Navigate } from "react-router-dom"
 import 'react-lazy-load-image-component/src/effects/blur.css'; // Import the desired effect
+import iPhonePhoto from "../assets/iPhone-13-Pro-Front.png"
+import MacPhoto from "../assets/Mac Studio.png"
+
+
 
 function HomePage() {
   const section1Ref = useRef(null);
@@ -40,38 +44,20 @@ function HomePage() {
         <div className='content-banner'>
           <div className='content-banner1'>
             <h1>Complete Solution for Your Solar Panel Needs!</h1>
+            <h3>Complete Solution for Your Solar Panel Needs!Complete Solution for Your Solar Panel Needs!Complete Solution for Your Solar Panel Needs!Complete Solution for Your Solar Panel Needs!Complete Solution for Your Solar Panel Needs!</h3>
             <Link to="/main"><button type="button">Try Now</button></Link>
-          </div>
+            </div>
         </div>
       </div>
 
-      <section className="section"> 
-        <div className="section-content">
-          <div className="steps">
-            <div className="steps-content">
-              <p>STEP 1</p>
-              <h3>REGISTER</h3>
-            </div>
-          </div>
-          <div className="steps">
-            <div className="steps-content">
-              <p>STEP 2</p>
-              <h3>POST YOUR PROBLEM</h3>
-            </div>
-          </div>
-          <div className="steps">
-            <div className="steps-content">
-              <p>STEP 3</p>
-              <h3>FIND INSTRUCTOR</h3>
-            </div>
-          </div>
-        </div>
-      </section>
+
       
+            <img src={iPhonePhoto} alt="My Image" className='iphone'/>
+            <img src={MacPhoto} alt="My Image" className='mac'/>
       <section className="section-2" ref={section1Ref} id="section-2">
         <div className="section__title">
           <h4>Features</h4>
-          <h1>What does ... offer?</h1>
+          <h1>What does SolarCoders offer?</h1>
           <br></br>
           <hr></hr>
         </div>              
