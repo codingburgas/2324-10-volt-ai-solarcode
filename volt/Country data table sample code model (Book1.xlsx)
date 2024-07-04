@@ -1,0 +1,22 @@
+import pandas as pd
+
+# Manually create the data from the image into a DataFrame
+data = {
+    "Country": ["Germany", "France", "United Kingdom", "Italy", "Spain", "Poland", "Russia", "Turkey", "Netherlands", "Belgium", "Greece", "Austria", "Czech Republic", "Hungary", "Sweden", "Denmark", "Norway", "Switzerland", "Portugal", "Ireland", "Bulgaria", "Slovakia", "Croatia", "Slovenia", "Estonia", "Lithuania", "Latvia", "Luxembourg", "Finland", "Cyprus", "Malta", "Iceland"],
+    "City": ["Berlin", "Paris", "London", "Rome", "Madrid", "Warsaw", "Moscow", "Istanbul", "Amsterdam", "Brussels", "Athens", "Vienna", "Prague", "Budapest", "Stockholm", "Copenhagen", "Oslo", "Zurich", "Lisbon", "Dublin", "Sofia", "Bratislava", "Zagreb", "Ljubljana", "Tallinn", "Vilnius", "Riga", "Luxembourg", "Helsinki", "Nicosia", "Valletta", "Reykjavik"],
+    "Coordinates": ["52.5200,13.4050", "48.8567,2.3522", "51.5074,-0.1278", "41.8719,12.4964", "40.4168,-3.7038", "52.2374,21.0113", "55.7558,37.6173", "41.0082,28.9744", "52.3702,4.8952", "50.8503,4.3517", "37.9833,23.7333", "48.2083,16.3739", "50.0757,14.4375", "47.4979,19.0402", "59.3297,18.0681", "55.6757,12.5686", "59.9139,10.7514", "47.3667,8.5333", "38.7237,-9.1358", "53.3498,-6.2603", "42.6953,23.3225", "48.1576,17", "45.8067,16", "46.1919,14.5576", "59.4377,24.6975", "54.6805,25.2804", "56.9667,24.1065", "49.6113,6", "60.1697,24.9377", "35.1667,33.3656", "35.9067,14.5147", "64.0818,21.9485"],
+    "2020 Summer": ["Yes"] * 32,
+    "2020 Winter": ["No"] * 32,
+    "2021 Summer": ["Yes"] * 32,
+    "2021 Winter": ["No"] * 32,
+    "2022 Summer": ["Yes"] * 32,
+    "2022 Winter": ["No"] * 32,
+    "2023 Summer": ["Yes"] * 32,
+    "2023 Winter": ["No"] * 32,
+    "2024 Summer": ["Yes"] * 32,
+    "2024 Winter": ["No"] * 32,
+    "Power Consumption (GWh)": [553.2, 450.8, 343.4, 320.5, 293.1, 242.9, 235.6, 224.1, 214.5, 204.2, 195.6, 184.5, 176.2, 168.1, 165.9, 159.5, 155.2, 149.8, 144.9, 139.6, 136, 133, 129, 124, 119, 114, 109, 103, 99, 96, 93, 88]
+}
+
+# Convert to DataFrame
+df = pd.DataFrame(data)
