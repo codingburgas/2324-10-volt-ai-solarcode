@@ -6,6 +6,13 @@ import 'react-lazy-load-image-component/src/effects/blur.css'; // Import the des
 import iPhonePhoto from "../assets/iPhone-13-Pro-Front.png"
 import MacPhoto from "../assets/Mac Studio.png"
 import { IoIosArrowDown } from "react-icons/io";
+import ProfileD from '../assets/ProfileD.png'
+import ProfileA from '../assets/ProfileA.png'
+import ProfileB from '../assets/ProfileB.png'
+import ProfileDD from '../assets/ProfileDD.png'
+import ProfileG from '../assets/ProfileG.png'
+import ProfileV from '../assets/ProfileV.png'
+import ProfileL from '../assets/ProfileL.png'
 
 
 
@@ -47,8 +54,8 @@ function HomePage() {
           <div className='content-banner2'>
 
             <div className='content-banner1'>
-              <h1>Complete Solution for Your Solar Panel Needs!</h1>
-              <h3>Complete Solution for Your Solar Panel Needs!Complete Solution for Your Solar Panel Needs!Complete Solution for Your Solar Panel Needs!Complete Solution for Your Solar Panel Needs!Complete Solution for Your Solar Panel Needs!</h3>
+              <h1>Discover Prime Solar Locations!</h1>
+              <h3>Map Your Potential for Maximum Efficiency</h3>
             </div>
 
             <div className='content-banner1'>
@@ -74,19 +81,31 @@ function HomePage() {
         </div>              
         <div className="section-content2">
           <br></br>
-          <ul>
-            <li id="special"><b>Interactive Mapping Interface:</b> Our user-friendly interactive map allows you to effortlessly navigate and explore potential solar panel installation sites. Zoom in and out, pan across different areas, and click on specific locations to get detailed information about their solar potential.</li>           
-            <li><b>Solar Potential Analysis</b> Harness the power of advanced algorithms and satellite data to evaluate the solar potential of any location. Our tool provides detailed insights into sunlight exposure, average solar radiation, and seasonal variations to help you make informed decisions. </li>
-            <li><b>Customizable Layers</b> Tailor your map view with customizable layers that include terrain, building footprints, vegetation cover, and more. Visualize how different factors impact the suitability of a location for solar panel installation. </li>
-            <li><b>Resource Hub:</b> Access and share study materials and notes. </li>
-            <li><b>Weather Data Integration </b> Access real-time and historical weather data to understand how local climate conditions affect solar energy production. Our tool integrates information on cloud cover, temperature, and precipitation to give you a comprehensive overview. </li>
-          </ul>
+          <p>
+            <b>Interactive Mapping Interface:</b> Our user-friendly interactive map allows you to effortlessly navigate and explore potential solar panel installation sites. Zoom in and out, pan across different areas, and click on specific locations to get detailed information about their solar potential.
+          </p>
+
+          <p>
+  
+            <b>Solar Potential Analysis</b> Harness the power of advanced algorithms and satellite data to evaluate the solar potential of any location. Our tool provides detailed insights into sunlight exposure, average solar radiation, and seasonal variations to help you make informed decisions. 
+          </p>
+          <p>
+  
+            <b>Customizable Layers</b> Tailor your map view with customizable layers that include terrain, building footprints, vegetation cover, and more. Visualize how different factors impact the suitability of a location for solar panel installation. study materials and notes. 
+
+          </p>
+          <p>
+
+            <b>Weather Data Integration </b> Access real-time and historical weather data to understand how local climate conditions affect solar energy production. Our tool integrates information on cloud cover, temperature, and precipitation to give you a comprehensive overview. 
+          </p>
+
+          
         </div>
 
 
 
       </section>
-      
+      <hr></hr>
       <section className="section-3" ref={section2Ref}>
         <div className="section__title">
           <h4>ABOUT</h4>
@@ -101,20 +120,54 @@ function HomePage() {
           <br></br>
           <h2>Our Mission</h2>
           <p>
-          Welcome to our Solar Panel Mapping Tool, your premier destination for discovering optimal locations for solar panel installations. Our mission is to empower individuals, businesses, and communities to harness the power of solar energy, contributing to a sustainable and energy-efficient future. Here’s what makes us the trusted leader in solar mapping solutions:
+          Our mission is to provide cutting-edge tools and resources that enable users to make informed decisions about solar energy investments. We strive to promote environmental sustainability, reduce carbon footprints, and support the global transition to renewable energy sources.
           </p>
         </div>
       </section>
-      
+      <hr></hr>
       <section className="section-1" ref={section3Ref} id="section-1">
-        <div className="section__title">
-          <h4>Team</h4>
-          <h1>Members of the Team </h1>
+        <div className="section__title1">
+          <h4>Members</h4>
+          <h1>Our Team</h1>
           <br></br>
           <hr></hr>
         </div>
         <div className="section-content1">
-
+          <div className='section-card'>
+            <img src= {ProfileD}></img>
+            <h3>Dimitar Byandov</h3>
+            <p>Frontend Developer</p>
+          </div>
+          <div className='section-card'>
+            <img src= {ProfileB}></img>
+            <h3>Bilyana Badalova</h3>
+            <p>Frontend Developer</p>
+          </div>
+          <div className='section-card'>
+            <img src= {ProfileA}></img>
+            <h3>Alexander Sivkov</h3>
+            <p>Frontend Developer</p>
+          </div>
+          <div className='section-card'>
+            <img src= {ProfileG}></img>
+            <h3>Gregory Kalashnikov</h3>
+            <p>Frontend Developer</p>
+          </div>
+          <div className='section-card'>
+            <img src= {ProfileDD}></img>
+            <h3>Dobril Peev</h3>
+            <p>Frontend Developer</p>
+          </div>
+          <div className='section-card'>
+            <img src= {ProfileL}></img>
+            <h3>Lazar Apostolov</h3>
+            <p>Frontend Developer</p>
+          </div>
+          <div className='section-card'>
+            <img src= {ProfileV}></img>
+            <h3>Valentin Pendashev</h3>
+            <p>Frontend Developer</p>
+          </div>
         </div>
       </section>
       

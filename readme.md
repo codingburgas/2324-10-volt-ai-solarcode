@@ -1,47 +1,65 @@
-<h1 align="center" > Solar code</h1>
-<br>
-<p align="center">
-<img src="logo.png" alt="logo" height="200" width="200">
-</p>
- 
-<br>
- 
-## Topic
-SolarCode is your comprehensive resource for all things related to solar energy. Whether you're a homeowner looking to install solar panels, a student researching renewable energy, or an engineer developing solar technology, SolarCode has something for you.
- 
-## How to run the web
-<ol>
-<li> Download the latest release </li>
-<li> Run the ... file </li>
-</ol>
+<h1 align="center">Team SolarCoders</h1>
 
-## Used technologies
-- <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOLTSWvOXpnFCGXpLFVJY3xJoX2cmibudYFBtz2MGRrrlY0GUbg3uw7KuhbhAKy83A_F0&usqp=CAU" width="15" height="15"> Python <br>
-- <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/180px-HTML5_logo_and_wordmark.svg.png" width="15" height="15"> HTML<br>
-- <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/800px-CSS3_logo_and_wordmark.svg.png" width="15" height="15"> CSS <br>
-- <img src="https://quintagroup.com/cms/js/js-image/javascript-logo.png" width="15" height="15"> JavaScript <br>
-- <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Jupyter_logo.svg/1200px-Jupyter_logo.svg.png" width="15" height="15"> Jupyter Notebook <br>
-- <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/2048px-Visual_Studio_Code_1.35_icon.svg.png" width="15" height="15"> Visual Studio Code <br>
-- <img src="https://den-dev.com/assets/reactjs-6aa35635.svg" width="15" height="15"> React<br>
-- <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Microsoft_Azure.svg/225px-Microsoft_Azure.svg.png" width="15" height="15"> Microsoft Azure<br>
-- <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Microsoft_Office_PowerPoint_%282019%E2%80%93present%29.svg/640px-Microsoft_Office_PowerPoint_%282019%E2%80%93present%29.svg.png" width="15" height="15"> Microsoft PowerPoint <br>
-- <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/GitHub_Invertocat_Logo.svg/300px-GitHub_Invertocat_Logo.svg.png" width="15" height="15"> GitHub <br>
- 
-## Features
-✅ Simplistic looking interface. <br>
-✅ Easiness of usage. <br>
-✅ Interactive Maps<br>
- 
-## Our Team
-- <a href="https://github.com/ATSivkov21"> Alexander Sivkov (Data Analyst) </a><br>
-- <a href="https://github.com/ATApostolov21"> Atanas Apostolov (Scrum Trainer)</a> <br>
-- <a href="https://github.com/BSBadalova21"> Bilyana Badalova (Scrum Trainer) </a><br>
-- <a href="https://github.com/VBPendashev21"> Valentin Pendashev (Data Analyst)</a> <br>
-- <a href="https://github.com/GEKalashnik21"> Grigoriy Kalashnik (Data Analyst) </a><br>
-- <a href="https://github.com/DKByandov21"> Dimitar Byandov (Frontend Developer)</a> <br>
-- <a href="https://github.com/DDPeev21"> Dobril Peev (Backend Developer) </a><br>
-- <a href="https://github.com/LPApostolov21"> Lazar Apostolov (Frontend Developer)</a> <br>
-## See our documents here
- [Presentaion](https://github.com/codingburgas/2324-10-volt-ai-solarcode/volt/docs/Presentation.pptx)  
- 
-##
+<p align="center">
+    <img src="logo.png" alt="logo" height="200" width="200">
+</p>
+
+## 🧒 Our Team
+
+<b>
+
+<a href="https://github.com/ATSivkov21"> 🟨 Alexander Sivkov (Data Analyst) </a><br>
+<a href=“https://github.com/DKByandov21”> 🟥 Dimitar Byandov [ Frontend Developer ] </a><br>
+<a href="https://github.com/ATApostolov21"> 🟩 Atanas Apostolov (Scrum Trainer)</a> <br>
+<a href="https://github.com/BSBadalova21"> 🟩 Bilyana Badalova (Scrum Trainer) </a><br>
+<a href="https://github.com/VBPendashev21"> 🟨 Valentin Pendashev (Data Analyst)</a> <br>
+<a href="https://github.com/DDPeev21"> 🟦 Dobril Peev (Backend Developer) </a><br>
+<a href="https://github.com/LPApostolov21"> 🟥 Lazar Apostolov (Frontend Developer)</a> <br>
+
+
+</b>
+
+## 💻 About
+<br>
+<b><p align="center">SolarCode is your comprehensive resource for all things related to solar energy. Whether you're a homeowner looking to install solar panels, a student researching renewable energy, or an engineer developing solar technology, SolarCode has something for you.
+</p></b>
+<br>
+
+## 🗂️Our Technologies
+
+### 👨‍💻Used code editor & collaborative service:
+<p align="left">
+    <a href="https://visualstudio.microsoft.com/vs/"><img src="https://sparkcdnwus2.azureedge.net/sparkimageassets/XP8CDJNZKFM06W-0c5249f8-b473-4f41-aea6-45b4bfb64a9a" alt="VS 2022 logo" width=48px /></a>
+    <a href="https://github.com/"><img src="https://img.icons8.com/nolan/344/github.png" alt="GitHub logo" width=52px /></a>
+</p>
+
+### 🔨Used tools for our visual elements:
+
+<p align="left">
+    <a href="https://www.adobe.com/creativecloud.html"><img src="https://www.adobe.com/content/dam/shared/images/product-icons/svg/creative-cloud.svg" alt="adobe creative cloud" width=48px /></a>
+</p>
+
+### 🔨📄Used tools for our documentation, presentation & communication:
+
+<p align="left">
+    <a href="https://www.microsoft.com/en-ww/microsoft-365/word"><img src="https://img.icons8.com/color/344/ms-word.png" alt="MS Word logo" width=48px /></a>
+    <a href="https://www.microsoft.com/en-ww/microsoft-365/excel"><img src="https://img.icons8.com/color/344/ms-excel.png" alt="MS Excel logo" width=48px /></a>
+    <a href="https://www.microsoft.com/en-ww/microsoft-365/powerpoint"><img src="https://img.icons8.com/color/344/ms-powerpoint.png" alt="MS PowerPoint logo" width=48px /></a>
+    <a href="https://www.microsoft.com/en/microsoft-teams/group-chat-software"><img src="https://img.icons8.com/color/344/microsoft-teams.png" alt = "MS Teams logo" width=46px /></a>
+</p>
+
+
+<br>
+<hr>
+
+## 📄Documents
+
+<a href="https://github.com/codingburgas/2324-10-volt-ai-solarcode/volt/docs/Presentation.pptx">Presentation </a>
+
+
+<hr>
+
+## 📩 How to Install
+
+<p>To install the repostory, you have to type this 👇 in CMD.
+<pre>git clone https://github.com/codingburgas/2324-10-volt-ai-solarcode.git</pre>
