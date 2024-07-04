@@ -10,7 +10,7 @@ from retry_requests import retry
 import time
 
 # read city location data
-power_consumption_data = pd.read_csv('../volt/docs/power_consumption_data.csv')
+power_consumption_data = pd.read_csv('C:\Users\DDPeev21\2324-10-volt-ai-solarcode\volt\docs\power_consumption_data.csv')
 cities_with_coordinates = power_consumption_data[['City', 'Coordinates']]
 
 
@@ -81,5 +81,5 @@ for city, resp in responses.items():
 print(hourly_dataframe)
 
 
-hourly_dataframe.to_csv("data/cities_data_hourly.csv", index = False)
+hourly_dataframe.to_csv("data\cities_data_hourly.csv", index = False)
 
