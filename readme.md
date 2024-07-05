@@ -1,7 +1,7 @@
 <h1 align="center">Team SolarCoders</h1>
 
 <p align="center">
-    <img src="logo.png" alt="logo" height="200" width="200">
+    <img src="volt/frontend/src/assets/logo.jpg" alt="logo" height="200" >
 </p>
 
 ## 🧒 Our Team
