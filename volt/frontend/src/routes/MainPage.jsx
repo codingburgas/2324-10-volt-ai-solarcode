@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Footer from '../components/Footer';
 import MapComponent from '../components/MapComponent';
 import { Link, useNavigate } from "react-router-dom";
+import { IoIosArrowBack } from "react-icons/io";
 
 
 function MainPage() {
@@ -23,7 +24,7 @@ function MainPage() {
 
   return (
     <div style={containerStyle}>
-      <Link to="/"><i className="arrow"></i></Link>
+    <Link to="/"><IoIosArrowBack className ='arrow' size={100}/></Link>
 
       <div className='main-page'>
 

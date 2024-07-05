@@ -13,6 +13,8 @@ import ProfileDD from '../assets/ProfileDD.png'
 import ProfileG from '../assets/ProfileG.png'
 import ProfileV from '../assets/ProfileV.png'
 import ProfileL from '../assets/ProfileL.png'
+import Question from '../assets/question.png'
+
 
 
 
@@ -70,8 +72,9 @@ function HomePage() {
 
 
       
-            <img src={iPhonePhoto} alt="My Image" className='iphone'/>
-            <img src={MacPhoto} alt="My Image" className='mac'/>
+            <img src={iPhonePhoto} alt="iPhone" className='iphone'/>
+            <img src={MacPhoto} alt="MacBook" className='mac'/>
+            <img src={Question} alt="Question" className='question'/>
       <section className="section-2" ref={section1Ref} id="section-2">
         <div className="section__title">
           <h4>Features</h4>
